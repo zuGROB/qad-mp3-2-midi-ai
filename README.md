@@ -14,6 +14,7 @@ Weights: https://huggingface.co/KazamiYuuka/qad-mp3-2-midi-ai
 
 Test midis:
 0415.mid - WAS in dataset for training. Threshold - 0.5, min duration - 0.01.
+
 0518.mid - was NOT in dataset. Threshold - 0.9, min duration - 0.1.
 
 ## How it Works
