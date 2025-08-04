@@ -22,7 +22,7 @@ Weights: https://huggingface.co/KazamiYuuka/qad-mp3-2-midi-ai
 
 1.  **Preprocessing (`preprocess.py`):** Audio files are converted into mel spectrograms, which are visual representations of the sound. These are saved as data chunks for training. Data augmentation (time stretching, pitch shifting) is used to create a larger, more robust dataset.
 2.  **Training (`train.py`):** The `ResCRNN_v0.11` model learns to map the spectrogram chunks to MIDI notes. The trained model is saved as `audio_to_midi_v0.11.pth`.
-3.  **Conversion (`convert_v11.py`):** The trained model analyzes a new MP3 file and predicts the MIDI notes, generating a `.mid` file.
+3.  **Conversion (`convert_v0.11.py`):** The trained model analyzes a new MP3 file and predicts the MIDI notes, generating a `.mid` file.
 
 ## How to Use
 
@@ -42,5 +42,5 @@ Weights: https://huggingface.co/KazamiYuuka/qad-mp3-2-midi-ai
 
 4.  **Convert an MP3 to MIDI:**
     ```bash
-    python convert_v11.py "path/to/your/song.mp3"
+    python convert_v0.11.py "path/to/your/song.mp3"
     ```
